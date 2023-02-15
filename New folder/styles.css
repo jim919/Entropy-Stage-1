@@ -1,0 +1,49 @@
+html {
+  background-color: black;
+}
+
+button {
+  position: center;
+  background-color: lightblue;
+  width: 3.5%;
+}
+
+#doThis {
+  text-indent: 50px;
+  color: white;
+  font: Bahnschrift SemiLIght;
+  font-size: 4;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+#doThis::after {
+  content: "";
+  width: 5px;
+  height: 20px;
+  background: white;
+  display: inline-block;
+}
+
+#doThis::after {
+  animation: blink 1.5s steps(2) infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+}
+
+img {
+  height: 663px;
+}
+
+.center {
+  text-align: center;
+}
+
+audio {
+	height: 25px;
+	width: 100px;
+}
